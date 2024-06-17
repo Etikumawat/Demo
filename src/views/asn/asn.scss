@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .card-body .d-flex {
+    display: block !important;
+  }
+  .button {
+    width: inherit;
+  }
+  .custom .col-md {
+    padding: 15px;
+  }
+  .custom-width {
+    width: 35% !important;
+  }
+  .custome-block {
+    display: block !important;
+  }
+  .createImage {
+    display: none !important;
+  }
+}
+.createImage {
+  position: absolute;
+  bottom: -96px;
+  right: 0;
+}

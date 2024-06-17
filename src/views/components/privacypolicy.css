@@ -1,0 +1,37 @@
+/* src/TermsAndConditions.css  */
+
+.privacy-policy {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.privacy-policy h1 {
+    color: #f26c13;
+    margin-top: 20px;
+}
+
+.privacy-policy h2 {
+    color: #f26c13;
+    margin-top: 20px;
+}
+
+.terms-container h3 {
+    color: #f26c13;
+    margin-top: 20px;
+}
+
+.privacy-policy p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.privacy-policy ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.privacy-policy ul li {
+    list-style-type: disc;
+}

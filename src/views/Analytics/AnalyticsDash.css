@@ -1,0 +1,35 @@
+.analytics-card{
+    transition: all 0.35s ease-in-out;
+}
+
+.analytics-card:hover{
+    scale: 1.025;
+    /* cursor: pointer; */
+    filter: brightness(1.15);
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+}
+
+.card-hoverEffect{
+    transition: all 0.35s ease-in-out;
+}
+
+.card-hoverEffect:hover{
+    scale: 1.025;
+    /* cursor: pointer; */
+    filter: brightness(1.089); 
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+}
+
+.status-tracker{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .status-tracker{
+        min-height: 410px;
+    }
+}

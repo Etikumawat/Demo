@@ -1,0 +1,17 @@
+.show-arrows:focus::-webkit-inner-spin-button {
+  -webkit-appearance: auto !important;
+  appearance: auto !important;
+}
+
+/* .react-dataTable{
+  min-height: 400px !important;
+} */
+.select__menu{
+  position: absolute !important;
+  z-index: 50;
+  overflow: visible !important;
+}
+.react-select{
+  max-height: max-content !important;
+  width: 100% !important;
+}

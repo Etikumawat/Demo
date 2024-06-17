@@ -1,0 +1,22 @@
+// ================================================================================================
+//     File Name: type.scss
+//     Description: Type pages custom scss
+//     ----------------------------------------------------------------------------------------------
+//     Item Name: SupplierX  - Vuejs, HTML & Laravel Admin Dashboard Template
+//     Author: SupplierX
+//     Author URL: http://www.themeforest.net/user/SupplierX
+// ================================================================================================
+
+// text heading color
+.text-body-heading {
+  color: $headings-color;
+  &:hover {
+    color: inherit !important;
+  }
+}
+// text body hover color if have link
+.text-body {
+  &[href]:hover {
+    color: $link-hover-color !important;
+  }
+}

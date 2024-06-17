@@ -1,0 +1,21 @@
+// ================================================================================================
+//  File Name: ext-component-media-player.scss
+//  Description: Media Player SCSS.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: SupplierX  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: SupplierX
+//  Author URL: http://www.themeforest.net/user/SupplierX
+// ================================================================================================
+
+// to remove outline on focus
+.audio-player {
+  &:focus {
+    outline: 0;
+  }
+}
+.plyr__controls {
+  justify-content: flex-start;
+}
+.plyr__progress {
+  flex-grow: 1;
+}

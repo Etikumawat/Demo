@@ -1,0 +1,33 @@
+.btn {
+  &[class*='btn-gradient'],
+    &[class*='btn-gradient'],
+
+  &[class*='btn-relief'] {
+    &:first-child:active {
+      color: black;
+    }
+  }
+  &[class*='btn-flat']:active {
+    color: 'black';
+    border-color: transparent;
+  }
+}
+.btn-2{
+  background-image: linear-gradient(to right, #dc8410 0%, #b92c06 51%, #f7821c 100%);
+  background-size: 200% auto;
+    color: #ffffff !important;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    border: none !important;
+    transition: 0.7s all;
+    -webkit-transition: 0.7s all;
+    margin-top: 14px;
+    // display: inline-block;
+    width: 192px;
+    height: 40px;
+}
+.btn-2:hover {
+  background-position: right center; 
+}
+

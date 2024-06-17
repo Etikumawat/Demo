@@ -1,0 +1,101 @@
+@use "sass:math";
+
+$quantity: 20;
+
+.card-container {
+  position: relative;
+  overflow: hidden; // Clip any overflow
+}
+
+.fireflies {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.firefly {
+  position: absolute; // Position relative to the container
+  width: 0.4vw;
+  height: 0.4vw;
+  margin: -0.2vw 0 0 9.8vw;
+  animation: drift 100s ease alternate infinite;
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: -10vw;
+  }
+
+  &::before {
+    background: white;
+    opacity: 0.4;
+    animation: drift ease alternate infinite;
+  }
+
+  &::after {
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw white;
+    animation: drift ease alternate infinite, flash ease infinite;
+  }
+}
+
+// Randomize Fireflies Motion
+@for $i from 1 through $quantity {
+  $steps: random(12) + 16;
+  $rotationSpeed: (random(10) + 8) * 1s; // Ensuring the speed is in seconds
+  $flashDuration: (random(6000) + 5000) * 1ms; // Duration in milliseconds
+  $flashDelay: (random(8000) + 500) * 1ms; // Delay in milliseconds
+
+  .firefly:nth-child(#{$i}) {
+    animation-name: move#{$i};
+
+    &::before {
+      animation-duration: #{$rotationSpeed};
+    }
+
+    &::after {
+      animation-duration: #{$rotationSpeed}, #{$flashDuration};
+      animation-delay: 0ms, #{$flashDelay};
+    }
+  }
+
+  @keyframes move#{$i} {
+    @for $step from 0 through $steps {
+      #{($step * math.div(100, $steps))}% {
+        transform: translateX((random(100) - 50) * 1vw)
+          translateY((random(100) - 50) * 1vh)
+          scale(math.div(random(75), 100) + 0.25);
+      }
+    }
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  0%,
+  30%,
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw orange;
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw orange;
+  }
+}

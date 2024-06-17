@@ -1,0 +1,63 @@
+@import "./base/bootstrap.scss";
+@import "./base/bootstrap-extended.scss";
+@import "./base/colors.scss";
+@import "./base/components.scss";
+
+// Themes
+@import "./base/themes/dark-layout.scss";
+@import "./base/themes/bordered-layout.scss";
+@import "./base/themes/semi-dark-layout.scss";
+// @import './base/custom-rtl.scss';
+
+// React Specific
+@import "react/index";
+
+//Custom Styling
+.light-bg {
+  background-color: rgba($primary, 0.52) !important;
+}
+
+// .table {
+//   width: 100%;
+//   max-width: 100%;
+//   margin-bottom: 1rem;
+//   background-color: transparent;
+//   border-collapse: collapse;
+// }
+
+// .table th,
+// .table td {
+//   padding: 0.75rem;
+//   vertical-align: top;
+//   border-top: 1px solid #dee2e6;
+// }
+
+// .table thead th {
+//   vertical-align: bottom;
+//   border-bottom: 2px solid #dee2e6;
+// }
+
+// .table tbody + tbody {
+//   border-top: 2px solid #dee2e6;
+// }
+
+// .table-responsive {
+//   display: block;
+//   width: 100%;
+//   overflow-x: auto;
+//   -webkit-overflow-scrolling: touch;
+//   -ms-overflow-style: -ms-autohiding-scrollbar;
+// }
+
+// @media (max-width: 767.98px) {
+//   .table-responsive {
+//     display: block;
+//     width: 100%;
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+//     -ms-overflow-style: -ms-autohiding-scrollbar;
+//   }
+//   .table-responsive > .table {
+//     width: max-content;
+//   }
+// }

@@ -1,0 +1,27 @@
+/* src/TermsAndConditions.css */
+.terms-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.terms-container h2,
+.terms-container h3 {
+  color: #f26c13;
+  margin-top: 20px;
+}
+
+.terms-container p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.terms-container ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.terms-container ul li {
+  list-style-type: disc;
+}
